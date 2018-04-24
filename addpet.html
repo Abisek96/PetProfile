@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Pet Profiler</title>
+
+    <!-- Stylesheets
+    ================================================= -->
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/ionicons.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    
+    <!--Favicon-->
+   <!-- <link rel="shortcut icon" type="image/png" href="images/fav.png"/>--> <!-- background pic -->
+	</head>
+	<body>
+  
+    <!--preloader-->
+    <div id="spinner-wrapper">
+      <div class="spinner"></div>
+    </div>
+
+    <!-- Header
+    ================================================= -->
+		<header id="header" class="lazy-load">
+      <nav class="navbar navbar-default navbar-fixed-top menu">
+        <div class="container">
+
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="petlist.html"><img src="images/logo.png" alt="logo" /></a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+             <ul class="nav navbar-nav navbar-right main-menu">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Home <span><img src="images/down-arrow.png" alt="" /></span></a>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Newsfeed <span><img src="images/down-arrow.png" alt="" /></span></a>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Timeline <span><img src="images/down-arrow.png" alt="" /></span></a>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle pages" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">All Pages <span><img src="images/down-arrow.png" alt="" /></span></a>
+              </li>
+              <li class="dropdown"><a href="contact.html">Contact</a></li>
+            </ul>
+            <form class="navbar-form navbar-right hidden-sm">
+              <div class="form-group">
+                <i class="icon ion-android-search"></i>
+                <input type="text" class="form-control" placeholder="Search friends, photos, videos">
+              </div>
+            </form>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container -->
+      </nav>
+    </header>
+    <!--Header End-->
+
+
+        <!-- Sign Up Form
+        ================================================= -->
+        <div class="sign-up-form">
+					<a href="index.html" class="logo"><img src="images/logo.png" alt="Friend Finder"/></a>
+					<h2 class="text-white">Add my pet</h2>
+					<div class="line-divider"></div>
+					<div class="form-wrapper">
+						<p class="signup-text">Fill the following information about the pet </p>
+						<form action="#">
+							<fieldset class="form-group">
+								<input type="text" class="form-control" id="example-name" placeholder="Enter pet category">
+							</fieldset>
+							<fieldset class="form-group">
+								<input type="text" class="form-control" id="example-name" placeholder="Enter name">
+							</fieldset>
+							<fieldset class="form-group">
+								<input type="text" class="form-control" id="example-name" placeholder="Enter breed">
+							</fieldset>
+							 <div class="row">
+                      <p class="birth"><strong>Date of Birth</strong></p>
+                      <div class="form-group col-sm-3 col-xs-6">
+                        <label for="month" class="sr-only"></label>
+                        <select class="form-control" id="day">
+                          <option value="Day" disabled selected>Day</option>
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                          <option>6</option>
+                          <option>7</option>
+                          <option>8</option>
+                          <option>9</option>
+                          <option>10</option>
+                          <option>11</option>
+                          <option>12</option>
+                          <option>13</option>
+                          <option>14</option>
+                          <option>15</option>
+                          <option>16</option>
+                          <option>17</option>
+                          <option>18</option>
+                          <option>19</option>
+                          <option>20</option>
+                          <option>21</option>
+                          <option>22</option>
+                          <option>23</option>
+                          <option>24</option>
+                          <option>25</option>
+                          <option>26</option>
+                          <option>27</option>
+                          <option>28</option>
+                          <option>29</option>
+                          <option>30</option>
+                          <option>31</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-sm-3 col-xs-6">
+                        <label for="month" class="sr-only"></label>
+                        <select class="form-control" id="month">
+                          <option value="month" disabled selected>Month</option>
+                          <option>Jan</option>
+                          <option>Feb</option>
+                          <option>Mar</option>
+                          <option>Apr</option>
+                          <option>May</option>
+                          <option>Jun</option>
+                          <option>Jul</option>
+                          <option>Aug</option>
+                          <option>Sep</option>
+                          <option>Oct</option>
+                          <option>Nov</option>
+                          <option>Dec</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-sm-6 col-xs-12">
+                        <label for="year" class="sr-only"></label>
+                        <select class="form-control" id="year">
+                          <option value="year" disabled selected>Year</option>
+                          <option>2000</option>
+                          <option>2001</option>
+                          <option>2002</option>
+                          <option>2004</option>
+                          <option>2005</option>
+                          <option>2006</option>
+                          <option>2007</option>
+                          <option>2008</option>
+                          <option>2009</option>
+                          <option>2010</option>
+                          <option>2011</option>
+                          <option>2012</option>
+                        </select>
+                      </div>
+                    </div>
+							<fieldset class="form-group">
+								<input type="email" class="form-control" id="example-email" placeholder="Description">
+							</fieldset>
+						</form>
+						
+						<button class="btn-secondary">Done</button>
+					</div>
+					<a href="#">Go back</a>
+					
+				</div><!-- Sign Up Form End -->
+
+        
+
+    <!-- Scripts
+    ================================================= -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.appear.min.js"></script>
+		<script src="js/jquery.incremental-counter.js"></script>
+    <script src="js/script.js"></script>
+	</body>
+</html>
